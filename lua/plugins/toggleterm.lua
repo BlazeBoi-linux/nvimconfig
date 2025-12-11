@@ -22,8 +22,10 @@ return {
 				vim.cmd("ToggleTerm")
 			end
 
+			--== Toggle Terminal
 			vim.keymap.set("n", "<leader>t", "<CMD>ToggleTerm<CR>")
 			vim.keymap.set("t", "<Esc><Esc>", close_term) -- Escape and Close Terminal
+
 		end,
 	},
 }
