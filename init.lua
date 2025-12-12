@@ -48,7 +48,18 @@ vim.keymap.set("i", "kj", "<ESC>")
 -- Buffeer Navigation
 vim.keymap.set("n", "<A-l>", "<CMD>bnext<CR>") -- Moves to next buffer
 vim.keymap.set("n", "<A-h>", "<CMD>bprevious<CR>") -- Moves to previous buffer
-vim.keymap.set("n", "<A-c>", "<CMD>bdelete<CR>") -- Close current buffer 
+vim.keymap.set("n", "<A-c>", "<CMD>bdelete<CR>") -- Close current buffer
+
+-- Windows Splitting
+vim.keymap.set("n", "<leader>sv", "<C-w>v", { desc = "Split windows vertiacally" })
+vim.keymap.set("n", "<leader>se", "<C-w>=", { desc = "Make the splits equal size" })
+
+-- Windows Navigation
+vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move to the left window" })
+vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move to the down window" })
+vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Move to the up window" })
+vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move to the right window" })
+vim.keymap.set("n", "<C-w>", "<C-w>w", { desc = "Cycle through windows" })
 
 --== Bootstrap lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
