@@ -37,8 +37,8 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- Better indenting in visual Mode
-vim.keymap.set("v", "<", "<gv", {desc = "Indent left and reselect"})
-vim.keymap.set("v", ">", ">gv", {desc = "Indent right and reselect"})
+vim.keymap.set("v", "<", "<gv", { desc = "Indent left and reselect" })
+vim.keymap.set("v", ">", ">gv", { desc = "Indent right and reselect" })
 
 vim.api.nvim_set_hl(0, "TelescopeNormal", { bg = "none" })
 vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "none" })

@@ -1,8 +1,13 @@
-{
-  "C++ Competitive Programming Template": {
-    "prefix": "cptemplate",
-    "body": [
-      "#include <bits/stdc++. h>",
+local ls = require("luasnip")
+local s = ls.snippet
+local t = ls.text_node
+local i = ls.insert_node
+local f = ls.function_node
+
+return {
+  s("cptemplate", {
+    t({
+      "#include <bits/stdc++.h>",
       "",
       "using namespace std;",
       "",
@@ -56,7 +61,11 @@
       "",
       "void solve()",
       "{",
-      "    $1",
+      "    ",
+    }),
+    i(1, "// Your solution here"),
+    t({
+      "",
       "}",
       "",
       "int main()",
@@ -76,7 +85,6 @@
       "    }",
       "    return 0;",
       "}"
-    ],
-    "description": "Full C++ competitive programming template"
-  },
+    })
+  }),
 }
