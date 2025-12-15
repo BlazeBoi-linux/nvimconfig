@@ -20,7 +20,7 @@ return {
       "    cout.tie(0)",
       "#define endl '\\n'",
       "#define dbg(x) cout << (#x) << \" = \" << x << endl",
-      "#define dbg(x, y)                                                              \\",
+      "#define dbg2(x, y)                                                              \\",
       "    cout << (#x) << \" = \" << x << \", \" << (#y) << \" = \" << y << endl",
       "",
       "// Shorten Functions",
